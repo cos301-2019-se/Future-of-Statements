@@ -1,23 +1,26 @@
+/**
+ * Sample React Native App
+ * https://github.com/facebook/react-native
+ *
+ * @format
+ * @flow
+ */
+
 import React from 'react';
-//For React Navigation Version 2+
-//import {createStackNavigator} from 'react-navigation';
-//For React Navigation Version 3+
 import {createStackNavigator,createAppContainer} from 'react-navigation';
 import Login from './pages/Login';
 import Home from './pages/Home';
 import Register from './pages/Register';
-import GenerateFuel from './pages/GenerateFuel';
- 
+
 const App = createStackNavigator({
   Login: {
     screen: Login,
     navigationOptions: {
       title: 'Login',
-      headerStyle: { backgroundColor: '#8AD32E' },
+      headerStyle: {backgroundColor: '#8AD32E'},
       headerTintColor: '#ffffff',
     },
   },
-
   Register: {
     screen: Register,
     navigationOptions: {
@@ -34,16 +37,7 @@ const App = createStackNavigator({
       headerTintColor: '#ffffff',
     },
   },
-  GenerateFuel: {
-    screen: GenerateFuel,
-    navigationOptions: {
-      title: 'GenerateFuel',
-      headerStyle: { backgroundColor: '#8AD32E' },
-      headerTintColor: '#ffffff',
-    },
-  },
+
 });
-//For React Navigation Version 2+
-//export default App;
-//For React Navigation Version 3+
+
 export default createAppContainer(App);
