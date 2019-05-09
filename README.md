@@ -12,3 +12,11 @@ Ryan Hartley u15016880 <br>
 Baven Pavaday u15336728 <br>
 Oluwatosin Botti u13208642 <br>
 Tlou Lebelo u15209190 <br>
+
+
+**How to run the OCR** 
+Run npm install after downloading the file. <br>
+Navigate to the react-native-text-detector and change the build.gradle dependcies to the following: <br>
+    implementation 'com.google.firebase:firebase-core:16.0.8'
+    implementation 'com.google.firebase:firebase-ml-vision:19.0.3'
+    implementation 'com.facebook.react:react-native:+'
