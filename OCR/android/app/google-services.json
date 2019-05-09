@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "746972054244",
+    "firebase_url": "https://business-card-reader-957a0.firebaseio.com",
+    "project_id": "business-card-reader-957a0",
+    "storage_bucket": "business-card-reader-957a0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:746972054244:android:4df307bf11f4e7ec",
+        "android_client_info": {
+          "package_name": "com.ocr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "746972054244-kh3murvfq0e8rktshaqal5988ikrh70e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmbQXG4TRfyON1Im0T2vB2NbrPt4hFwA8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "746972054244-kh3murvfq0e8rktshaqal5988ikrh70e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
