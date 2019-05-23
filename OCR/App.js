@@ -17,6 +17,8 @@ const App = createStackNavigator({
         screen: OCR,
         navigationOptions: {
             title: 'OCR',
+            headerStyle: {backgroundColor: '#8AD32E'},
+            headerTintColor: '#ffffff',
         },
     },
 

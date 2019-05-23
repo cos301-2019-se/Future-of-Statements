@@ -13,8 +13,7 @@ import {RNCamera as Camera} from "react-native-camera";
 import RNTextDetector from "react-native-text-detector";
 
 type Props = {};
-var textRecieved = [];
-
+var textString = "";
 
 const PICTURE_OPTIONS = {
     quality: 1,
@@ -28,7 +27,7 @@ export default class OCR extends Component<Props> {
         loading: false,
         image: null,
         error: null,
-        visionResp: []
+        visionResp: [],
     };
 
 
@@ -86,9 +85,25 @@ export default class OCR extends Component<Props> {
     processImage = async (uri, imageProperties) => {
         try {
             const visionResp = await RNTextDetector.detectFromUri(uri);
-            textRecieved.push(visionResp);
+            var resp = Object.values(visionResp);
+            var textRecieved = JSON.stringify(resp);
+            var fol = textRecieved.concat("\"text\"");
 
-            console.log(visionResp);
+            var textR = fol.replace(/(?="bounding")(.*?)(?="text")/g,"");
+
+
+                textR = textR.replace(/text/g, "");
+                textR = textR.replace(/,/g, "\n");
+                textR = textR.replace(/:/g, "");
+                textR = textR.replace(/\[/g, "");
+                textR = textR.replace(/{/g, "");
+                textR = textR.replace(/"/g, "");
+                textR = textR.replace(/\\n/g, "\n");
+
+           console.log(textR);
+
+           textString = textR;
+
             if (!(visionResp && visionResp.length > 0)) {
                 throw "UNMATCHED";
             }
@@ -100,13 +115,13 @@ export default class OCR extends Component<Props> {
         }
     };
 
-
     // mapVisionRespToScreen
     // Shows where text is being detected
 
     mapVisionRespToScreen = (visionResp, imageProperties) => {
         const IMAGE_TO_SCREEN_Y = screenHeight / imageProperties.height;
         const IMAGE_TO_SCREEN_X = screenWidth / imageProperties.width;
+        console.log(textString);
 
         return visionResp.map(item => {
             return {
@@ -122,8 +137,10 @@ export default class OCR extends Component<Props> {
     };
 
     onLoginClickListener = (out) => {
-        this.props.navigation.navigate('Output')
+
+        this.props.navigation.navigate('Output', {text: textString})
     }
+
 
     render() {
         return (
@@ -181,9 +198,18 @@ export default class OCR extends Component<Props> {
                     </TouchableHighlight>
                 ) :null}
 
+
+
+                    {/*{ Object.entries(textRecieved).map((item, key)=>(*/}
+                        {/*<Text key={key} style={styles.loginText} > { item } </Text>)*/}
+                    {/*)}*/}
+
+
+
             </View>
         );
     }
+
 }
 
 const styles = StyleSheet.create({
