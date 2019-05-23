@@ -6,7 +6,8 @@ import {
     StyleSheet,
     Text,
     ToastAndroid,
-    View
+    View,
+    TouchableHighlight
 } from 'react-native';
 import Geolocation from 'react-native-geolocation-service';
 
@@ -152,8 +153,23 @@ export default class App extends Component {
             <View style={styles.container}>
                
                 <View style={styles.buttons}>
-                    <Button title='Start Observing' onPress={this.getLocationUpdates} disabled={updatesEnabled} />
-                    <Button title='Stop Observing' onPress={this.removeLocationUpdates} disabled={!updatesEnabled} />
+                    <TouchableHighlight 
+                        style={[styles.buttonContainer, styles.FuelClaim]}
+                        //title='Start Observing' 
+                        onPress={this.getLocationUpdates} 
+                        disabled={updatesEnabled} 
+                    >
+                        <Text style={styles.FuelClaimText}>Start Observing</Text> 
+                    </TouchableHighlight>
+                    
+                    <TouchableHighlight 
+                        style={[styles.buttonContainer, styles.FuelClaim]}
+                        //title='Stop Observing' 
+                        onPress={this.removeLocationUpdates} 
+                        disabled={!updatesEnabled} 
+                    >
+                        <Text style={styles.FuelClaimText}>Stop Observing</Text>
+                    </TouchableHighlight>
                 </View>
 
                 <View style={styles.result}>
@@ -189,6 +205,21 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         marginVertical: 12,
         width: '100%'
+    },
+    buttonContainer: {
+        height:45,
+        flexDirection: 'row',
+        justifyContent: 'center',
+        alignItems: 'center',
+        marginBottom:20,
+        width:150,
+        borderRadius:30,
+    },
+    FuelClaim: {
+        backgroundColor: "#8AD32E",
+    },
+    FuelClaimText: {
+        color: 'white',
     },
     costPerDist: {
         color: '#239B56',

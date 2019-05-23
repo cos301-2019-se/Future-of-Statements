@@ -176,29 +176,29 @@ class GpsTracker extends Component {
 
 const styles = StyleSheet.create({
     container: {
-      flex: 1,
-      justifyContent: 'center',
-      alignItems: 'center',
-      backgroundColor: '#DCDCDC',
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: '#DCDCDC',
     },
     buttonContainer: {
-      height:45,
-      flexDirection: 'row',
-      justifyContent: 'center',
-      alignItems: 'center',
-      marginBottom:20,
-      width:250,
-      borderRadius:30,
+        height:45,
+        flexDirection: 'row',
+        justifyContent: 'center',
+        alignItems: 'center',
+        marginBottom:20,
+        width:250,
+        borderRadius:30,
     },
     FuelClaim: {
-      backgroundColor: "#8AD32E",
+        backgroundColor: "#8AD32E",
     },
     FuelClaimText: {
-      color: 'white',
+        color: 'white',
     },
     location: {
-      color: '#333333',
-      marginBottom: 5,
+        color: '#333333',
+        marginBottom: 5,
     },
     costPerDist: {
         color: '#239B56',
