@@ -119,8 +119,9 @@ export default class OCR extends Component<Props> {
     // Shows where text is being detected
 
     mapVisionRespToScreen = (visionResp, imageProperties) => {
-        const IMAGE_TO_SCREEN_Y = screenHeight / imageProperties.height;
-        const IMAGE_TO_SCREEN_X = screenWidth / imageProperties.width;
+        const IMAGE_TO_SCREEN_Y = screenHeight / (imageProperties.height);
+        const IMAGE_TO_SCREEN_X =  screenWidth / (imageProperties.width/1.7) ;
+        const leftX = screenWidth /  (imageProperties.width );
         console.log(textString);
 
         return visionResp.map(item => {
@@ -128,7 +129,7 @@ export default class OCR extends Component<Props> {
                 ...item,
                 position: {
                     width: item.bounding.width * IMAGE_TO_SCREEN_X,
-                    left: item.bounding.left * IMAGE_TO_SCREEN_X,
+                    left: item.bounding.left * leftX,
                     height: item.bounding.height * IMAGE_TO_SCREEN_Y,
                     top: item.bounding.top * IMAGE_TO_SCREEN_Y
                 }
