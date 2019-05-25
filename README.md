@@ -6,6 +6,14 @@ Retro Rabbits current claims process is slow and tedious, requiring the employee
 
 The image scanner will extract the relevant information from the scanned image, do the necessary calculations and store this information. Then on the first Friday of the month, the employee will simply send all their stored claims.
 
+**SRS Document:**
+<a href="https://github.com/cos301-2019-se/Reformed-Rabbit-Requisitions-Routine/blob/master/Documentation/Demo%201.pdf" target="_blank">SRS Document</a>
+
+**Architectural Design and Requirements:**
+<a href="https://github.com/cos301-2019-se/Reformed-Rabbit-Requisitions-Routine/blob/master/Documentation/Demo%202.pdf" target="_blank">Architectural Designs and Requirements Document</a>
+
+
+
 **Team Members**
 
 Ryan Hartley u15016880 <br>
