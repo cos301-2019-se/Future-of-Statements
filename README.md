@@ -15,6 +15,8 @@ The image scanner will extract the relevant information from the scanned image, 
 **User Manual:**
 <a href="Documentation/User_Manual.pdf" target="_blank">User Manual Document</a>
 
+**Coding Standards:**
+<a href="Documentation/Coding_Standards.pdf" target="_blank">Coding Standards Document</a>
 
 
 **Team Members**
