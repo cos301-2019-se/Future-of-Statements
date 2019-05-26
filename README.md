@@ -10,7 +10,10 @@ The image scanner will extract the relevant information from the scanned image, 
 <a href="https://github.com/cos301-2019-se/Reformed-Rabbit-Requisitions-Routine/blob/master/Documentation/Demo%201.pdf" target="_blank">SRS Document</a>
 
 **Architectural Design and Requirements:**
-<a href="https://github.com/cos301-2019-se/Reformed-Rabbit-Requisitions-Routine/blob/master/Documentation/Demo%202.pdf" target="_blank">Architectural Designs and Requirements Document</a>
+<a href="https://github.com/cos301-2019-se/Reformed-Rabbit-Requisitions-Routine/blob/master/Documentation/Demo%202.pdf" target="_blank">Architectural Design and Requirements Document</a>
+
+**User Manual:**
+<a href="Documentation/User_Manual.pdf" target="_blank">User Manual Document</a>
 
 
 
