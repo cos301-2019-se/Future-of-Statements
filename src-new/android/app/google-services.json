@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "129460099151",
+    "firebase_url": "https://claimsapp-33709.firebaseio.com",
+    "project_id": "claimsapp-33709",
+    "storage_bucket": "claimsapp-33709.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:129460099151:android:4df307bf11f4e7ec",
+        "android_client_info": {
+          "package_name": "com.ocr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "129460099151-voaips4q11g3r7mgk85tva31ro2a3qg3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBc7h0_qahQbsphTfCNJXgcWXbFpoPtVac"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "129460099151-voaips4q11g3r7mgk85tva31ro2a3qg3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
