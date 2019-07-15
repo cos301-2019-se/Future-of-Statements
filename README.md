@@ -21,27 +21,11 @@ The image scanner will extract the relevant information from the scanned image, 
 
 **Team Members**
 
-Ryan Hartley u15016880 <br>
-Baven Pavaday u15336728 <br>
 Oluwatosin Botti u13208642 <br>
 Tlou Lebelo u15209190 <br>
 
 |Team Member | Details | 
 | :---         | :---         |  
-|**Ryan Hartley**|    **u15016880**   |
-|**Profile** |<a href="https://github.com/RyanH08" target="_blank">Github</a>|
-|**Overview**|I&#39;m a friendly, hard working person who is determined to better myself by learning different skill sets from the people I encounter in my life. In addition to this, I am very passionate about the interests which have been listed below.   |
-|**Position** |Final year BSc Computer Science|
-|**Interests** |Graphic Development, Gaming, Mountain Biking, Shark Angling, General Computer Technological Developments|
-|**Skills**|C++, Java, Test Driven Development, Web Development: HTML, CSS, JSON, Mongo DB, Bootstrap, JavaScript, SQL|
-|        |
-|**Baven Pavaday**|**u15336728** |
-|**Profile** |<a href="https://github.com/Baven253" target="_blank">Github</a>|
-|**Overview**|I&#39;m a hardworking honest individual that is always ready to learn and improve. I&#39;m friendly and enjoy the company of other people, I enjoy working with other people to create new and exciting projects.  |
-|**Position** |Final year BSc Computer Science|
-|**Interests** |Graphics, Gaming,Tennis, Reading, New Trends in Technology|
-|**Skills**|C++, Java, Test Driven Development, Web Development: HTML, CSS, JSON, Mongo DB, Bootstrap, JavaScript, SQL|
-|       |
 |**Oluwatosin Botti**|**u13208642** |
 |**Profile** |<a href="https://github.com/olwabott" target="_blank">Github</a>|
 |**Overview**|I&#39;m a determined individual who works hard and is always willing to learn. |
