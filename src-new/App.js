@@ -8,12 +8,32 @@
 
 import React from 'react';
 import {createStackNavigator,createAppContainer} from 'react-navigation';
-import FUELCLAIM from './fuelClaim' ;
-import OCR from './OCR';
-import Output from './Output';
+import HOME from './pages/home' ;
+import FUELCLAIM from './pages/fuelClaim' ;
+import MISCCLAIM from './pages/miscClaim' ;
+import OCR from './ocr/OCR';
+import Output from './ocr/Output';
 
 
 const App = createStackNavigator({
+    HOME: {
+        screen: HOME,
+        navigationOptions: {
+            title: 'HOME',
+            headerStyle: {backgroundColor: '#8AD32E'},
+            headerTintColor: '#ffffff',
+        }
+    },
+
+    MISCCLAIM: {
+        screen: MISCCLAIM,
+        navigationOptions: {
+            title: 'miscellaneous',
+            headerStyle: {backgroundColor: '#8AD32E'},
+            headerTintColor: '#ffffff',
+        }
+    },
+
     FUELCLAIM: {
         screen: FUELCLAIM,
         navigationOptions: {

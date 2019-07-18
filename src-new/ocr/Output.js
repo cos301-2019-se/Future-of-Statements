@@ -8,10 +8,17 @@ export default class SecondPage extends Component {
 
 
     render() {
-        const text =  this.props.navigation.getParam('text', 'nothing sent');
+        const date = this.props.navigation.getParam('date', 'error: not found');
+        const total = this.props.navigation.getParam('total', 'error: not found');
+        //const text =  this.props.navigation.getParam('text', 'nothing sent');
         return (
             <View style={styles.container}>
-                <Text>{text}</Text>
+
+                <Text>--------------------------</Text>
+                <Text>Date:{date}</Text>
+                <Text>Total:{total}</Text>
+                <Text>--------------------------</Text>
+
             </View>
         );
     }
